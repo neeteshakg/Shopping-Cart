@@ -1,0 +1,24 @@
+{% extends 'shop/base.html' %}
+{%  block title %} PRODUCT {% endblock %}
+{% block content %}
+{% load static %}
+
+<div class="row my-4">
+    <div class="col-md-4 ">
+         <img src='/media/{{prod.image}}' class="rounded" alt="...">
+        <div class="row ">
+            <button class="btn btn-primary mx-2">BUY NOW</button>
+            <button class="btn btn-primary">ADD TO CART</button>
+        </div>
+    </div>
+     <div class="col-md-8">
+        <h4> {{prod.product_name}}</h4>
+         </h1>RS. {{prod.price}}</h1>
+        <p> {{prod.description}}</p>
+    </div>
+
+
+</div>
+
+{% endblock %}
+
