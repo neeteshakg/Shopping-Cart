@@ -10,6 +10,6 @@ urlpatterns = [
     path('productView/', views.productView, name='ProductView'),
     path('product/<int:id>', views.Allproduct, name='Product'),
     path('tracker/', views.tracker, name='Tracking'),
-    path('checkout/', views.checkout, name='checkPut'),
+    path('checkout/', views.checkout, name='checkOut'),
     path('category/', views.categorywiseproductView, name='Category'),
 ]
