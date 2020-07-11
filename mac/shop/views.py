@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Product, Contact
+import json
 
 
 # Create your views here.
@@ -17,6 +18,28 @@ def index(request):
 
 def about(request):
     return render(request, 'shop/about.html')
+
+
+def cartView(request):
+    print("clicked cartView" + request.method)
+    cart = request.GET.get('cart', '')
+
+    dic = json.loads(cart)
+    cartDic = {}
+    cartlist = []
+    print()
+    for item in dic:
+        prod_id = item[2:]
+        print(prod_id)
+        prod = Product.objects.filter(id=prod_id)
+        qty = dic[item]
+        cartDic[prod] = qty
+
+
+
+    params = {'allprods': cartDic}
+
+    return render(request, 'shop/CartView.html', params)
 
 
 def contact(request):
@@ -54,7 +77,7 @@ def Allproduct(request, id):
     # params = {'product': productlist, 'no_of_slides': nslides, 'range': range(nslides)}
     prod = Product.objects.filter(id=id)
     print(prod)
-    return render(request, 'shop/product.html',{'prod':prod[0]})
+    return render(request, 'shop/product.html', {'prod': prod[0]})
 
 
 def categorywiseproductView(request):
@@ -63,7 +86,7 @@ def categorywiseproductView(request):
 
     #
     allprods = []
-    catProd = Product.objects.values('category','id')
+    catProd = Product.objects.values('category', 'id')
     cats = {item['category'] for item in catProd}
     for cat in cats:
         prod = Product.objects.filter(category=cat)
