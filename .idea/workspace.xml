@@ -4,12 +4,10 @@
     <list default="true" id="b17f11cf-d0f2-4e1e-b8c1-3fab107fe703" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mac/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/mac/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mac/shop/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/mac/shop/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mac/shop/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mac/shop/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mac/shop/templates/shop/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/mac/shop/templates/shop/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mac/shop/templates/shop/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/mac/shop/templates/shop/product.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mac/shop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mac/shop/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mac/shop/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mac/shop/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/shop/templates/shop/categoryWiseProduct.html" beforeDir="false" afterPath="$PROJECT_DIR$/mac/shop/templates/shop/categoryWiseProduct.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/shop/templates/shop/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/mac/shop/templates/shop/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/shop/templates/shop/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/mac/shop/templates/shop/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -1,110 +1,166 @@
-
-
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="UTF-8">
-    <title>{%  block title %} {% endblock %}</title>
+  <meta charset="UTF-8">
+  <title>{%  block title %} {% endblock %}</title>
 
-    {% load static %}
+  {% load static %}
 
 
-    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-   {% block style %} <style></style>{% endblock %}
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  {% block style %} <style></style>{% endblock %}
 </head>
+
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="/shop">E-Commerce Website</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/shop">E-Commerce Website</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="/shop">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/shop/about/">About Us<span class="sr-only"></span></a>
-          </li>
-            <li class="nav-item">
-            <a class="nav-link" href="/shop/category/">CATEGORY WISE PRODUCT</a>
-          </li>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/shop">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/shop/about/">About Us<span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/shop/category/">CATEGORY WISE PRODUCT</a>
+        </li>
 
-            <li class="nav-item">
-            <a class="nav-link" href="/shop/contact">Contact Us</a>
-          </li>
-<li class="nav-item">
-            <a class="nav-link" href="/shop/checkout">Check Out</a>
-          </li>
-<!--          <li class="nav-item">-->
-<!--            <a class="nav-link" href="#">Cart(<span id="cart">0</span>)</a>-->
-<!--          </li>-->
+        <li class="nav-item">
+          <a class="nav-link" href="/shop/contact">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/shop/checkout">Check Out</a>
+        </li>
+        <!--          <li class="nav-item">-->
+        <!--            <a class="nav-link" href="#">Cart(<span id="cart">0</span>)</a>-->
+        <!--          </li>-->
 
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
-        </form>
-          <button id="popcart" type="button" class="btn btn-secondary mx-2" data-html="true" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
+      </form>
+      <button id="popcart" type="button" class="btn btn-secondary mx-2" data-html="true" data-container="body"
+        data-toggle="popover" data-placement="bottom" data-content="Vivamus
 sagittis lacus vel augue laoreet rutrum faucibus.">
-  Cart(<span id="cart">0</span>)
-</button>
-      </div>
-    </nav>
-
-
-    <div class="container">
-<!--      <div class="row justify-content-center">-->
-<!--        <div class="col-12">-->
-<!--          <h1 class="mt-2">ECOMMERCE WEB</h1>-->
-<!--          <hr class="mt-0 mb-4">-->
-{% block content %}
-          {% endblock %}
-        </div>
-      </div>
+        Cart(<span id="cart">0</span>)
+      </button>
     </div>
-<script src="{% static 'js/jquery-3.5.1.min.js' %}"></script>
-<script src="{% static 'js/bootstrap.min.js' %}"></script>
-<script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>-->
-<!--     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>-->
-    {% block js %}
-<script>
-    console.log("sda");
-    if (localStorage.getItem('cart') == null)
-    {
-        var cart = {};
+  </nav>
+
+
+  <div class="container my-3">
+    <!--      <div class="row justify-content-center">-->
+    <!--        <div class="col-12">-->
+    <!--          <h1 class="mt-2">ECOMMERCE WEB</h1>-->
+    <!--          <hr class="mt-0 mb-4">-->
+    {% block content %}
+    {% endblock %}
+  </div>
+  </div>
+  </div>
+  <script src="{% static 'js/jquery-3.5.1.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+  {% block js %}
+  <script>
+
+    if (localStorage.getItem('cart') == null) {
+      var cart = {};
     }
-    else
-    {
-        cart = JSON.parse(localStorage.getItem('cart'));
-        document.getElementById('cart').innerHTML = Object.keys(cart).length
+    else {
+
+      cart = JSON.parse(localStorage.getItem('cart'));
+
+      updateCart(cart);
+
     }
-    $('.cart').click(function(){
-        console.log('Clicked');
-        var idstr = this.id.toString()
+    $('.cart').click(function () {
+      console.log('Clicked');
+      var idstr = this.id.toString()
 
-        if(cart[idstr] == undefined)
-        {
-            cart[idstr] = 1;
+      if (cart[idstr] == undefined) {
+        cart[idstr] = 1;
+      }
+      else {
+        cart[idstr] += 1;
+
+      }
+        updateCart(cart);
+
+        //
+      
+    });
+    $('#popcart').popover();
+    
+    // ADD pop over to cart
+    document.getElementById('popcart').setAttribute('data-content', "YPDATE POP");
+    function UpdatePopover(cart) {
+      console.log('update');
+      var i = 1;
+      var popstr = "";
+
+      popstr = popstr + "<h4>Items in Cart</h4> ";
+      for (var item in cart) {
+        if (cart[item] > 0) {
+          popstr = popstr + "<b>" + i + "</b>: ";
+          popstr = popstr + document.getElementById('name' + item).innerHTML + " <b>Qty: " + cart[item] + "</b><br>";
+          i = i + 1;
         }
-        else
-        {
-            cart[idstr] += 1;
-        }
-        console.log(cart);
-        localStorage.setItem('cart',JSON.stringify(cart));
-        document.getElementById('cart').innerHTML = Object.keys(cart).length
+      }
+      document.getElementById('popcart').setAttribute('data-content', popstr);
+      $('#popcart').popover('show');
 
-     });
-      $('#popcart').popover();
-      document.getElementById('popcart').setAttribute('data-content','<h4>CART</h4>');
+    };
 
-</script>
-{% endblock %}
+    function updateCart(cart) {
+      var count = 0;
+      for (var item in cart) {
+
+        document.getElementById('sp' + item).innerHTML = "<button class='btn btn-primary minus' id = 'minus" + item + "'> - </button> <span id = 'val" + item + "''> " + cart[item] + " </span><button class='btn btn-primary plus' id = 'plus" + item + "'> +  </button> "
+        count = count + cart[item];
+        document.getElementById('cart').innerHTML = count
+        localStorage.setItem('cart', JSON.stringify(cart));
+        UpdatePopover(cart);
+      }
+    };
+    $(".spanpr").on('click', 'button.minus', function () {
+
+      a = this.id.slice(5,);
+      cart[a] = cart[a] - 1;
+      cart[a] = Math.max(0, cart[a]);
+      document.getElementById('val' + a).innerHTML = cart[a]
+      //  if(cart[a]==0){
+      //   document.getElementById('sp' + item).innerHTML = 
+      //  }
+      updateCart(cart);
+
+
+    });
+    $(".spanpr").on('click', 'button.plus', function () {
+      console.log("PLUS CLICKED");
+      a = this.id.slice(4,);
+      cart[a] = cart[a] + 1;
+      console.log(cart[a]);
+
+      document.getElementById('val' + a).innerHTML = cart[a];
+      updateCart(cart);
+
+    });
+
+  </script>
+  {% endblock %}
 
 </body>
+
 </html>
