@@ -4,8 +4,7 @@
     <list default="true" id="b17f11cf-d0f2-4e1e-b8c1-3fab107fe703" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mac/shop/templates/shop/CartView.html" beforeDir="false" afterPath="$PROJECT_DIR$/mac/shop/templates/shop/CartView.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mac/shop/templates/shop/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/mac/shop/templates/shop/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mac/shop/templates/shop/categoryWiseProduct.html" beforeDir="false" afterPath="$PROJECT_DIR$/mac/shop/templates/shop/categoryWiseProduct.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/shop/templatetags/tag_library.py" beforeDir="false" afterPath="$PROJECT_DIR$/mac/shop/templatetags/tag_library.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mac/shop/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mac/shop/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

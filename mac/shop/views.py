@@ -27,17 +27,19 @@ def cartView(request):
     dic = json.loads(cart)
     cartDic = {}
     cartlist = []
-
+    sum = 0
     for item in dic:
         prod_id = item[2:]
         print(prod_id)
         prod = Product.objects.filter(id=prod_id)
         qty = dic[item]
+        totalprice = prod[0].price * qty
+        sum = sum + totalprice
         cartDic[prod] = qty
 
 
 
-    params = {'allprods': cartDic}
+    params = {'allprods': cartDic,'TotalSum':sum}
 
     return render(request, 'shop/CartView.html', params)
 
