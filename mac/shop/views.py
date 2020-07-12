@@ -27,7 +27,7 @@ def cartView(request):
     dic = json.loads(cart)
     cartDic = {}
     cartlist = []
-    print()
+
     for item in dic:
         prod_id = item[2:]
         print(prod_id)
